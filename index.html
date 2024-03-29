@@ -16,10 +16,9 @@
             position: relative;
             transform-style: preserve-3d;
             transition: transform 0.5s;
-            cursor: pointer;
         }
         
-        .card.flipped {
+        .card:hover {
             transform: rotateY(180deg);
         }
         
@@ -44,7 +43,7 @@
 
 <body>
     <div class="card-container">
-        <div class="card" onclick="flipCard(this)">
+        <div class="card">
             <div class="card-front">
                 <h2>Front of Card</h2>
                 <p>This is the front side of the card.</p>
@@ -56,11 +55,5 @@
         </div>
     </div>
 </body>
-
-<script>
-    function flipCard(card) {
-        card.classList.toggle('flipped');
-    }
-</script>
 
 </html>
